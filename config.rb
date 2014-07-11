@@ -47,6 +47,22 @@
 #   end
 # end
 
+set :markdown_engine, :kramdown
+activate :directory_indexes
+set :trailing_slash, true
+activate :i18n, :mount_at_root => :en
+
+# Slim configuration
+set :slim, {
+  :format  => :html5,
+  :indent => '    ',
+  :pretty => true,
+  :sort_attrs => false
+}
+::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
+
+
+
 # Use LiveReload
 activate :livereload
 
@@ -84,4 +100,10 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+end
+
+ready do
+  # Add bower's directory to sprockets asset path
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end

@@ -1,6 +1,7 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem "middleman", "~>3.0.13"
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~>3.3.3"
+gem "middleman-livereload", "~> 3.3"
+gem "slim"
+gem "kramdown"
+gem 'bootstrap-sass', '~> 3.2', :require => false
