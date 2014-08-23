@@ -66,7 +66,7 @@ Unlike most guides, I hope to cover the CLI without going deeply into operating 
 
 ## Intended audience
 
-This guide is intended for both non-programmers and programmers who are otherwise unfamiliar with the command-line interface.
+This guide is intended for both non-programmers and programmers who are unfamiliar with the command-line interface.
 
 __Non-programmers:__ If you've tried and struggled to learn the syntax and concepts of Java, JavaScript, Python, Ruby, etc., then the CLI can be a stepping stone to understanding the fundamental nature of computing tasks, while requiring a less comprehensive understanding of computer science concepts.
 
@@ -79,11 +79,11 @@ __Programmers:__ If you already know the CLI, you'll find many of the early sect
 ## Other resources
 
 
-### Guides and books
+### Guides, Books, and Practical Articles
 
 The __Skeptical Command Line__ is not meant to supercede, but to compelment the existing, excellent CLI guides, including:
 
-- [Practical Unix](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix) - A practical introduction to using the Unix operating system with a focus on Linux command line skills. This is a Stanford University class that's been released as an open-curriculu.
+- [Practical Unix](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix) - A practical introduction to using the Unix operating system with a focus on Linux command line skills. This is a Stanford University class that's been released as an open-online-course.
 - [Software Carpentry's The Unix Shell](http://software-carpentry.org/v5/novice/shell/index.html): this is one section of an ambitious, comprehensive open-source guide with the purpose of making "scientists more productive, and their work more reliable, by teaching them basic computing skills."
 - [Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/) - A much more thorough exploration of the Unix shell.
 - [Sysadmin Casts](https://sysadmincasts.com/): this excellently-well-produced screencast focuses more on system administration, such as server configuration, deployment, security, and logging &ndash; tasks which the command-line is well-suited for and thus, inextricably associated with.
@@ -96,15 +96,18 @@ The __Skeptical Command Line__ is not meant to supercede, but to compelment the 
 - [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/) - This is more of a treatise than a practical user guide, but its eloquent advocacy for "The Unix Way" is what convinced me to learn and appreciate the command-line.
 
 
-### Articles and Essays
+### Essays and Thoughts
 
-Here are a few essays on the nature, joy, and tribulations of command-line computing:
+Essays on the nature, joy, and tribulations of command-line computing:
 
 - [Basics of the Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
      > This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
 
 - [Preface to the Unix-Haters Handbook](http://www.art.net/~hopkins/Don/unix-haters/preface.html) 
      > The original Unix solved a problem and solved it well, as did the Roman numeral system, the mercury treatment for syphilis, and carbon paper. And like those technologies, Unix, too, rightfully belongs to history. 
+
+- [Explorations in Unix](http://www.drbunsen.org/explorations-in-unix/) by Seth Brown
+  > Few tools are more indispensable to my work than Unix. Manipulating data into different formats, performing transformations, and conducting exploratory data analysis (EDA) is the lingua franca of data science. The coffers of Unix hold many simple tools, which by themselves are powerful, but when chained together facilitate complex data manipulations.
 
 - [The Two Cultures of Computing](http://pgbovine.net/two-cultures-of-computing.htm) by Philip Guo. 
      > "It's comically absurd that the most sophisticated computer programmers nowadays are still using an interface that's remained unchanged since before humans landed on the moon. What the duck?!?"
@@ -123,6 +126,3 @@ Here are a few essays on the nature, joy, and tribulations of command-line compu
    > The command that had been run was most likely ‘rm -r -f *’, which—roughly speaking—commands the system to begin removing every file below the current directory. This is commonly used to clear out a subset of unwanted files. Unfortunately, someone on the system had run the command at the root level of the Toy Story 2 project and the system was recursively tracking down through the file structure and deleting its way out like a worm eating its way out from the core of an apple.
 - [Hacker News discussion on more UNIX snafus](https://news.ycombinator.com/item?id=7892471)
    > LOL One day working on a very old machine many years ago in a galaxy far far away at the end of a 12 hour coding binge I accidentally typed: `rm -f *.c`
-
-- [Explorations in Unix](http://www.drbunsen.org/explorations-in-unix/) by Seth Brown
-  > Few tools are more indispensable to my work than Unix. Manipulating data into different formats, performing transformations, and conducting exploratory data analysis (EDA) is the lingua franca of data science. The coffers of Unix hold many simple tools, which by themselves are powerful, but when chained together facilitate complex data manipulations.
