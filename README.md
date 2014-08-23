@@ -1,12 +1,12 @@
 # The Skeptical Command Line
 
-The Skeptical Command Line is a free, online guide on using the [Unix shell, e.g. the command-line interface, e.g., the **CLI**](http://en.wikipedia.org/wiki/Unix_shell) to perform powerful computational tasks related to the seeking, analysis, and publication of information.
+The Skeptical Command Line is a free, online guide on using the [Unix command-line interface](http://en.wikipedia.org/wiki/Unix_shell) to perform powerful computational tasks related to the seeking, analysis, and publication of information.
 
-I wrote *The Skeptical Command Line* to complement the computational journalism classes I will be teaching at Stanford starting in Fall 2014. I knew that most students couldn't be expected to learn enough (*useful*) programming during their coursework. At the same time, it's near impossible to take advantage of computational power without having a way to *teach* or *tell* the computer what you want it  to do.
+I am writing *The Skeptical Command Line* to complement the computational journalism classes I will be teaching at Stanford starting in Fall 2014. I knew that most students couldn't be expected to learn enough (*useful*) programming during their coursework. At the same time, it's near impossible to take advantage of computational power without having a way to *teach* or *tell* the computer what you want it  to do.
 
-The command-line interface provides both an accessible (if not user-friendly) way to *converse* with computers, in such a way that real-life, information-related work can be done by users who know what they need to do, and, how painful it would be without a computer's assistance. 
+The command-line interface, abbrevated as **CLI**, is an accessible (if not user-friendly) way to *converse* with computers, such that real-world information-related work can be done by users who know *conceptually* what they need to do, and, how painful it would be without a computer's assistance. 
 
-Along the way, non-programmers will get a better sense of why they'd even want to learn programming. But learning the CLI is not meant intended to be an intellectual exercise, but a powerful way to solve problems.
+Along the way, non-programmers will get a better sense of why they'd even *want* to learn programming. But learning the CLI is not intended to be an intellectual exercise, but a powerful way to solve problems.
 
 **Note**: This is just the README file for the Github repo. At some point, this guide will be published at http://www.skepticli.com. You can reach me via Twitter: [@dancow](https://twitter.com/dancow) or leave comments [in the Github Issues](https://github.com/skepticli/skepticli-guide/issues).
 
@@ -85,10 +85,13 @@ The __Skeptical Command Line__ is not meant to supercede, but to compelment the 
 
 - [Practical Unix](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix) - A practical introduction to using the Unix operating system with a focus on Linux command line skills. This is a Stanford University class that's been released as an open-curriculu.
 - [Software Carpentry's The Unix Shell](http://software-carpentry.org/v5/novice/shell/index.html): this is one section of an ambitious, comprehensive open-source guide with the purpose of making "scientists more productive, and their work more reliable, by teaching them basic computing skills."
+- [Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/) - A much more thorough exploration of the Unix shell.
 - [Sysadmin Casts](https://sysadmincasts.com/): this excellently-well-produced screencast focuses more on system administration, such as server configuration, deployment, security, and logging &ndash; tasks which the command-line is well-suited for and thus, inextricably associated with.
 - [Commandlinefu](http://www.commandlinefu.com/commands/browse): A crowdsourced repository of useful tricks and hacks with the command-line.
 - [A Command Line Primer for Beginners](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything) - "The command line isn't just for wise Linux beards. It's actually an awesome tool with almost limitless functionality. Here's a primer on how it works, and how you can do almost anything with it."
 - [The Command Line is Your Best Friend](http://code.tutsplus.com/tutorials/the-command-line-is-your-best-friend--net-30362) - A nice overview of basic command-line concepts, terminology, and most common commands.
+- [Bio-unix: Examples of Simple Scripting in Bioinformatics (Including Awk, Perl, and Python) ](http://www.oliverelliott.org/article/bioinformatics/tut_bio_unix/) - Many pratical examples of command-line work for scientific researchers.
+- [Useful Unix Commands for Data Science](http://www.gregreda.com/2013/07/15/unix-commands-for-data-science/) - "Imagine you have a 4.2GB CSV file. It has over 12 million records and 50 columns. All you need from this file is the sum of all values in one particular column. How would you do it?"
 - [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/) - This is more of a treatise than a practical user guide, but its eloquent advocacy for "The Unix Way" is what convinced me to learn and appreciate the command-line.
 
 
@@ -112,6 +115,13 @@ Here are a few essays on the nature, joy, and tribulations of command-line compu
 - [Biculturalism](http://www.joelonsoftware.com/articles/Biculturalism.html) by Joel Spolsky.      
     >  "Unix culture values code which is useful to other programmers, while Windows culture values code which is useful to non-programmers."
 
+- [Should the Student Teach the Computer, or Vice Versa?](http://www.citejournal.org/vol2/iss3/seminal/seminalarticle1.pdf) by Arthur Luehrmann.
+    >  If the computer is so powerful a resource that it can be programmed to simulate the instructional process, shouldn’t we be teaching our students mastery of this powerful intellectual tool?
 
+- [How Pixar’s Toy Story 2 was deleted twice, once by technology and again for its own good](http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/) by Matthew Panzarino/TheNextWeb
+   > The command that had been run was most likely ‘rm -r -f *’, which—roughly speaking—commands the system to begin removing every file below the current directory. This is commonly used to clear out a subset of unwanted files. Unfortunately, someone on the system had run the command at the root level of the Toy Story 2 project and the system was recursively tracking down through the file structure and deleting its way out like a worm eating its way out from the core of an apple.
+- [Hacker News discussion on more UNIX snafus](https://news.ycombinator.com/item?id=7892471)
+   > LOL One day working on a very old machine many years ago in a galaxy far far away at the end of a 12 hour coding binge I accidentally typed: `rm -f *.c`
 
-
+- [Explorations in Unix](http://www.drbunsen.org/explorations-in-unix/) by Seth Brown
+  > Few tools are more indispensable to my work than Unix. Manipulating data into different formats, performing transformations, and conducting exploratory data analysis (EDA) is the lingua franca of data science. The coffers of Unix hold many simple tools, which by themselves are powerful, but when chained together facilitate complex data manipulations.
