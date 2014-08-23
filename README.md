@@ -70,9 +70,9 @@ This guide is intended for both non-programmers and programmers who are unfamili
 
 __Non-programmers:__ If you've tried and struggled to learn the syntax and concepts of Java, JavaScript, Python, Ruby, etc., then the CLI can be a stepping stone to understanding the fundamental nature of computing tasks, while requiring a less comprehensive understanding of computer science concepts.
 
-It's much easier just to _do_ work with the CLI than with novice-level programming ability. The trade-off is less flexibility. But if you're new to programming, it's unlikely you even know what to do with that flexibility. The CLI will introduce you to the concept of being a great
+It's much easier just to _do_ work with the CLI than with novice-level programming ability. The trade-off is less flexibility. But if you're new to programming, it's unlikely you even know *what to do with that flexibility*. Once you hit a ceiling with what you can do with the CLI, the concepts you've learned will transfer directly to any programming situation.
 
-__Note:__ once you get past CLI one-liners, you will essentially be doing programming, but it's not worth arguing over semantics here. Also, to "move around" as a programmer, you will almost certainly have to be doing command-line work anyway.
+__Note:__ once you get past CLI one-liners, you will technically be doing programming, but it's not worth arguing over semantics here. In any case, to "move around" in the programming environment, you will almost certainly have to be doing command-line work anyway.
 
 __Programmers:__ If you already know the CLI, you'll find many of the early sections to be too slow and simplified to be worth following. However, if you've been using the CLI mostly out of necessity (i.e. server administration), I hope some of the practical applications this guide covers will introduce you to new situations where the CLI can be applied.
 
@@ -126,5 +126,6 @@ Essays on the nature, joy, and tribulations of command-line computing:
 
 - [How Pixar’s Toy Story 2 was deleted twice, once by technology and again for its own good](http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/) by Matthew Panzarino/TheNextWeb
    > The command that had been run was most likely ‘rm -r -f *’, which—roughly speaking—commands the system to begin removing every file below the current directory. This is commonly used to clear out a subset of unwanted files. Unfortunately, someone on the system had run the command at the root level of the Toy Story 2 project and the system was recursively tracking down through the file structure and deleting its way out like a worm eating its way out from the core of an apple.
+
 - [Hacker News discussion on more UNIX snafus](https://news.ycombinator.com/item?id=7892471)
-   > LOL One day working on a very old machine many years ago in a galaxy far far away at the end of a 12 hour coding binge I accidentally typed: `rm -f *.c`
+    > LOL One day working on a very old machine many years ago in a galaxy far far away at the end of a 12 hour coding binge I accidentally typed: `rm -f *.c`
