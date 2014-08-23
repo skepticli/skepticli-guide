@@ -27,6 +27,17 @@ Along the way, non-programmers will get a better sense of why they'd even *want*
 
 Unix [was initially released more than 40 years ago](http://en.wikipedia.org/wiki/Unix) and today, its descendants and derivatives continue to [power a non-declining swath of our digital world](http://en.wikipedia.org/wiki/Usage_share_of_operating_systems), including the majority of supercomputers, mobile phones, web servers, and laptops seen at Brooklyn coffee shops.
 
+Some attribute Unix's longevity to the [too-costly-to-change strangehold common in legacy software](http://www.washingtonpost.com/world/asia_pacific/due-to-security-law-south-korea-is-stuck-with-internet-explorer-for-online-shopping/2013/11/03/ffd2528a-3eff-11e3-b028-de922d7a3f47_story.html). But I don't think it's a mere coincidence that Unix's philosophy resulted in the Unix systems living a near-eternity in technology-years.
+
+I've been frustrated with teaching programming to novices because they're so used to full-featured applications &ndash; such as Excel, Word, or even the common web browser &ndash; doing so much (unknowingly) on their behalf that the novice doesn't know what it means to *command* a computer to do exactly &ndash; *and only* &ndash; what the user wants it to do. 
+
+The command-line interface allows the user to *teach* the computer. The bare simplicity of the CLI forces a user to *think*, step-by-step, in a logical and deductive manner about the problem to be solved, rather than throwing the kitchen-sink of a modern computer application and hoping that something happens.
+
+That this simple interface often ends up being the most powerful and eloquent way to do things is a very welcome scenario for both the novice and the power user.
+
+
+
+
 ## Coverage
 
 *TBD*
