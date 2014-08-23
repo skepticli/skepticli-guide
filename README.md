@@ -92,6 +92,7 @@ The __Skeptical Command Line__ is not meant to supercede, but to compelment the 
 - [The Command Line is Your Best Friend](http://code.tutsplus.com/tutorials/the-command-line-is-your-best-friend--net-30362) - A nice overview of basic command-line concepts, terminology, and most common commands.
 - [Bio-unix: Examples of Simple Scripting in Bioinformatics (Including Awk, Perl, and Python) ](http://www.oliverelliott.org/article/bioinformatics/tut_bio_unix/) - Many pratical examples of command-line work for scientific researchers.
 - [Useful Unix Commands for Data Science](http://www.gregreda.com/2013/07/15/unix-commands-for-data-science/) - "Imagine you have a 4.2GB CSV file. It has over 12 million records and 50 columns. All you need from this file is the sum of all values in one particular column. How would you do it?"
+- [Eight Terminal Utilities Every OS X Command Line User Should Know](http://www.mitchchn.me/2014/os-x-terminal/) - This incredibly enlightening guide to 8 delightful (OS X only) commands considerably expanded my opinion of how fun the CLI could be.
 - [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/) - This is more of a treatise than a practical user guide, but its eloquent advocacy for "The Unix Way" is what convinced me to learn and appreciate the command-line.
 
 
