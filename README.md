@@ -2,7 +2,15 @@
 
 The Skeptical Command Line is a free, online guide on using the [Unix shell, e.g. the command-line interface, e.g., the **CLI**](http://en.wikipedia.org/wiki/Unix_shell) to perform powerful computational tasks related to the seeking, analysis, and publication of information.
 
-This guide is written and produced by [Dan Nguyen](http://danwin.com), who can also be reached via Twitter: [@dancow](https://twitter.com/dancow).
+I wrote *The Skeptical Command Line* to complement the computational journalism classes I will be teaching at Stanford starting in Fall 2014. I knew that most students couldn't be expected to learn enough (*useful*) programming during their coursework. At the same time, it's near impossible to take advantage of computational power without having a way to *teach* or *tell* the computer what you want it  to do.
+
+The command-line interface provides both an accessible (if not user-friendly) way to *converse* with computers, in such a way that real-life, information-related work can be done by users who know what they need to do, and, how painful it would be without a computer's assistance. 
+
+Along the way, non-programmers will get a better sense of why they'd even want to learn programming. But learning the CLI is not meant intended to be an intellectual exercise, but a powerful way to solve problems.
+
+**Note**: This is just the README file for the Github repo. At some point, this guide will be published at http://www.skepticli.com. You can reach me via Twitter: [@dancow](https://twitter.com/dancow) or leave comments [in the Github Issues](https://github.com/skepticli/skepticli-guide/issues).
+
+**Further note**: And there is nothing else (yet) in this repo. Stay tuned.
 
 
 ## Why the UNIX shell?
@@ -13,6 +21,8 @@ This guide is written and produced by [Dan Nguyen](http://danwin.com), who can a
 - Ubiquity
 - Portability
 - Design
+- Philosophy
+- Utility
 - Power
 
 Unix [was initially released more than 40 years ago](http://en.wikipedia.org/wiki/Unix) and today, its descendants and derivatives continue to [power a non-declining swath of our digital world](http://en.wikipedia.org/wiki/Usage_share_of_operating_systems), including the majority of supercomputers, mobile phones, web servers, and laptops seen at Brooklyn coffee shops.
@@ -21,17 +31,55 @@ Unix [was initially released more than 40 years ago](http://en.wikipedia.org/wik
 
 *TBD*
 
+#### Basic lessons
+
+- How to access the command-line
+- How to make the computer talk
+- How to move around
+- How the command-line can ruin your life
+- cat
+- grep
+- Writing to files
+- Pipes
+- Writing shell scripts
+- Variables
+- Loops and conditionals
+
+#### Practical use-cases
+
+- Power-searching of files
+- Mass processing of text-PDFs 
+- Combining OCR with text-mining
+- Web-scraping with wget
+- [csvkit](http://csvkit.readthedocs.org/en/0.8.0/)
+- Twitter data analysis
+- [Making GIFs from videos](https://github.com/skepticli/tutorial-screencast-to-gif)
+- Git 
+- Simple web development
+
+
+#### Things (hopefully) not covered
+
+Unlike most guides, I hope to cover the CLI without going deeply into operating system fundamentals. There's a lot of useful work that beginners can do without having to understand [ps](http://en.wikipedia.org/wiki/Ps_(Unix)) and [sudo](http://en.wikipedia.org/wiki/Sudo). In fact, as long as they remain beginners, it's probably best not to cover use-cases that necessarily rely on a practical understanding of access-control and multitasking.
+
+
+
 ## Intended audience
 
 This guide is intended for both non-programmers and programmers who are otherwise unfamiliar with the command-line interface.
 
-If you've tried and struggled to learn programming, whether it be Java, JavaScript, Python, Ruby, etc., the CLI offers a high-level way to do the kind of unique computing tasks that you're ostensibly wanting to do via a programming language. The CLI requires a lesser understanding of computer science concepts than does programming, while at the same time, the CLI will be much more powerful and flexible than what you've done using consumer-friendly operating systems (e.g. Mac OS X, Windows, iOS).
+__Non-programmers:__ If you've tried and struggled to learn the syntax and concepts of Java, JavaScript, Python, Ruby, etc., then the CLI can be a stepping stone to understanding the fundamental nature of computing tasks, while requiring a less comprehensive understanding of computer science concepts.
 
-(Note: once you get past CLI one-liners, you will essentially be doing programming, but it's not worth arguing over semantics here.)
+It's much easier just to _do_ work with the CLI than with novice-level programming ability. The trade-off is less flexibility. But if you're new to programming, it's unlikely you even know what to do with that flexibility. The CLI will introduce you to the concept of being a great
 
-If you already know the CLI, you'll find many of the early sections to be too slow and simplified to be worth following. However, if you've been using the CLI mostly out of necessity (i.e. server administration), I hope some of the practical applications this guide covers will introduce you to new situations where the CLI can be applied.
+__Note:__ once you get past CLI one-liners, you will essentially be doing programming, but it's not worth arguing over semantics here. Also, to "move around" as a programmer, you will almost certainly have to be doing command-line work anyway.
+
+__Programmers:__ If you already know the CLI, you'll find many of the early sections to be too slow and simplified to be worth following. However, if you've been using the CLI mostly out of necessity (i.e. server administration), I hope some of the practical applications this guide covers will introduce you to new situations where the CLI can be applied.
 
 ## Other resources
+
+
+### Guides and books
 
 The __Skeptical Command Line__ is not meant to supercede, but to compelment the existing, excellent CLI guides, including:
 
@@ -39,4 +87,31 @@ The __Skeptical Command Line__ is not meant to supercede, but to compelment the 
 - [Software Carpentry's The Unix Shell](http://software-carpentry.org/v5/novice/shell/index.html): this is one section of an ambitious, comprehensive open-source guide with the purpose of making "scientists more productive, and their work more reliable, by teaching them basic computing skills."
 - [Sysadmin Casts](https://sysadmincasts.com/): this excellently-well-produced screencast focuses more on system administration, such as server configuration, deployment, security, and logging &ndash; tasks which the command-line is well-suited for and thus, inextricably associated with.
 - [Commandlinefu](http://www.commandlinefu.com/commands/browse): A crowdsourced repository of useful tricks and hacks with the command-line.
+- [A Command Line Primer for Beginners](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything) - "The command line isn't just for wise Linux beards. It's actually an awesome tool with almost limitless functionality. Here's a primer on how it works, and how you can do almost anything with it."
+- [The Command Line is Your Best Friend](http://code.tutsplus.com/tutorials/the-command-line-is-your-best-friend--net-30362) - A nice overview of basic command-line concepts, terminology, and most common commands.
 - [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/) - This is more of a treatise than a practical user guide, but its eloquent advocacy for "The Unix Way" is what convinced me to learn and appreciate the command-line.
+
+
+### Articles and Essays
+
+Here are a few essays on the nature, joy, and tribulations of command-line computing:
+
+- [Basics of the Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
+     > This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
+
+- [Preface to the Unix-Haters Handbook](http://www.art.net/~hopkins/Don/unix-haters/preface.html) 
+     > The original Unix solved a problem and solved it well, as did the Roman numeral system, the mercury treatment for syphilis, and carbon paper. And like those technologies, Unix, too, rightfully belongs to history. 
+
+- [The Two Cultures of Computing](http://pgbovine.net/two-cultures-of-computing.htm) by Philip Guo. 
+     > "It's comically absurd that the most sophisticated computer programmers nowadays are still using an interface that's remained unchanged since before humans landed on the moon. What the duck?!?"
+    
+
+- [The power (but enormous setup cost) of scripting](http://www.pgbovine.net/scripting.htm) by Philip Guo. 
+    > "So why doesn't everyone use command-line programs and write scripts to automate these mundane tasks and save themselves countless hours of time?"
+      
+- [Biculturalism](http://www.joelonsoftware.com/articles/Biculturalism.html) by Joel Spolsky.      
+    >  "Unix culture values code which is useful to other programmers, while Windows culture values code which is useful to non-programmers."
+
+
+
+
