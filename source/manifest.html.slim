@@ -1,0 +1,16 @@
+---
+title: The Manifest
+description: Learning how to compute one task at a time
+---
+
+
+- data.tools.each_value do |tool_group|
+  div.tool_group
+    h2 => tool_group.name
+    p.description => tool_group.description
+    div.tools
+      ul
+        - tool_group.items.each do |t|
+          li
+            span.name => t.name
+            span.deck => t.deck

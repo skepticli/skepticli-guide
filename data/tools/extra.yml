@@ -1,0 +1,67 @@
+name: Extra third party things
+description: Really neat tools for today
+items:
+  - name: pup
+    url: https://github.com/EricChiang/pup
+    deck: HTML parser written in Go
+    installs:
+      - name: corn.stanford.edu
+        shell: |
+          wget https://github.com/EricChiang/pup/releases/download/v0.3.4/pup_linux_amd64.zip | unzip -d ~/bin
+
+      - name: Mac OS X
+        shell: |
+          brew install https://raw.githubusercontent.com/EricChiang/pup/master/pup.rb
+
+    options:
+      - name: --file
+        alias: -f
+        description: File to read from
+
+      - name: --number
+        alias: -n
+        description: Number of matches to display
+
+    examples:
+      - name: Get the headlines from nytimes.com
+        description: |
+          Use `curl` to download the page and pipe it into `pup`.
+        shell: |
+          curl -s http://www.nytimes.com/ | pup 'h2.story-heading a text{}'
+        output: |
+          Ebola Response in Liberia Is Hampered by Infighting
+          Details Emerge on
+          Plans by Obama for
+          Immigration Order
+          G.O.P. Governors Seethe Ahead of Obamaâ€™s Action
+          Even if Law Expires, N.S.A.â€™s Collection of Data Could Continue
+          At Least 7 Die as Snow Piles Up in Western New York
+
+
+    related:
+      - jq
+
+
+  - name: jq
+    deck: JSON parser
+
+  - name: t
+    deck: Command-line access to the Twitter client
+
+  - name: rsync
+    deck: power backup
+
+  - name: ssh
+    deck: securely log into another machine
+
+  - name: git
+    deck: Version control
+
+  - name: aws
+    deck: Amazon Web services
+
+  - name: espeak
+    deck: Hear your computer talk
+
+  - name: say
+    deck: More computer speak from a mac

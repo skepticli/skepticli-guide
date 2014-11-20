@@ -1,0 +1,30 @@
+header.woz{
+  .navbar{
+    position: relative;
+    margin-bottom: 1.0em;
+    border: 1px solid transparent;
+    padding: 4px 0;
+    background: #455;
+  }
+  .navbar:after {
+    clear: both;
+  }
+
+
+  h2.title{
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0 0;
+    text-align: left;
+    /* mixin TK */
+    width: 740px;
+
+
+    a:link, a:visited{
+      color:inherit;
+      text-decoration: none;
+    }
+  }
+
+}

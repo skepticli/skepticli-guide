@@ -1,0 +1,61 @@
+article.tool
+
+  section.meta
+    h1.title => tool.name
+    div.deck => tool.deck
+
+    div.canonical.example
+      div.shell $ #{{tool.name}} yada yada
+
+  section
+    div.description => make_markdown "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae nisi veniam eligendi laboriosam minima labore atque maxime sit eius. Aliquam vitae accusantium officia fugiat unde debitis reprehenderit corporis, iusto."
+
+
+  - if (options = tool.options)
+    section.options
+      h2 Options
+      ul.options
+        - options.each do |opt|
+          li
+            span.name => opt.name
+            span.alias => opt.alias
+            span.description => opt.description
+
+
+  section.sec.installs
+    h2 How to install
+    - if (installs = tool.installs)
+      - installs.each do |inst|
+        h6 => "for #{inst.name}"
+        div.shell => inst.shell
+        div.description => inst.description
+
+    - else
+      p This tool is typically included by default on Unix systems.
+
+
+  section.sec.examples
+    h2 Examples
+    - tool.examples.each do |example|
+      div.example
+        h3 => example.name
+        - if (credit = example.credit)
+          div.credit
+            ' from
+            span => link_to credit.name, credit.url
+
+
+        div.shell = "$ #{example.shell.strip}"
+        - if (output = example.output)
+          div.shell.output = output
+
+        div.description => make_markdown example.description
+
+
+  - if (related_tools = tool.related)
+    section.sec
+      h2 Related tools
+      ul.related_tools
+        - related_tools.each do |r_tool_name|
+          li.tool => r_tool_name
+

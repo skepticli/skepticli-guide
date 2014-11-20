@@ -1,0 +1,15 @@
+name: Graphics
+description: Work with images
+items:
+  - name: identify
+    deck: View the characteristics of an image file
+
+  - name: mogrify
+    deck: Transform a file
+
+  - name: convert
+    deck: Convert file types
+
+  - name: ffmpeg
+
+  # do example of extracting audio

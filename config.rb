@@ -1,57 +1,18 @@
-###
-# Compass
-###
 
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 set :markdown_engine, :kramdown
-activate :directory_indexes
-set :trailing_slash, true
-activate :i18n, :mount_at_root => :en
+set :markdown, :layout_engine => :slim,
+  tables: true,
+  coderay_line_numbers: nil
 
+set :trailing_slash, true
+set :site_title, 'Public Affairs Data Journalism at Stanford University'
+set :site_description, "Civic accountability journalism taught at the Stanford University Graduate Journalism Program"
+set :typekit_id, 'bwq4gyt' #'deu1taf'
+# set :google_analytics_id, 'UA-55019978-1'
+
+activate :i18n, :mount_at_root => :en
+activate :livereload
 # Slim configuration
 set :slim, {
   :format  => :html5,
@@ -61,25 +22,16 @@ set :slim, {
 }
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
 
-
-
-# Use LiveReload
-activate :livereload
-
 # Compass configuration
-set :css_dir, 'stylesheets'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :files_dir, 'assets/files'
 
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  ignore 'images/*.psd'
-  ignore 'stylesheets/lib/*'
-  ignore 'stylesheets/vendor/*'
-  ignore 'javascripts/lib/*'
-  ignore 'javascripts/vendor/*'
+
 
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -106,4 +58,14 @@ ready do
   # Add bower's directory to sprockets asset path
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
+
+  data.tools.each_pair do |name, toolset|
+    toolset.items.each do |t|
+      tool = Hashie::Mash.new(t)
+      proxy "/tools/#{tool.name}.html", "/templates/tool.html",
+        :locals => { :tool => tool }
+    end
+  end
+
+
 end

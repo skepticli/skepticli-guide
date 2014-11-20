@@ -1,6 +1,6 @@
-# Computational Methods in the Civic Sphere
+# The Skeptical Command Line
 
-This is the repo for the __class website__ of Stanford COMM 113/213, as taught by [lecturer Dan Nguyen](//stanford.edu/~dun).
+This is the repo for skepticli.com by [Dan Nguyen](//danwin.com).
 
 This site is built with the [Middleman static site generator](//middlemanapp.com).
 

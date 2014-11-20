@@ -1,0 +1,46 @@
+article.tool{
+
+  .shell{
+    // white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #eee;
+    padding: 0.4em;
+    color: black;
+  }
+
+  .shell.output{
+    color: #4b4;
+  }
+
+  .meta{
+    .title{
+      font-family: $font-family-monospace;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    .deck{
+      display: inline;
+      font-size: 1.5em;
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    .canonical.example{
+      @extend .sec;
+      font-size: 1.4em;
+      margin-top: 1.0em;
+    }
+
+    margin-top: 1.5em;
+    text-align: center;
+  }
+
+
+  .installs{
+    .shell{
+      font-size: 0.8em;
+    }
+  }
+
+}

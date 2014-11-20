@@ -1,0 +1,190 @@
+name: Core utilities
+description: The best stuff
+items:
+  - name: alias
+    deck: Give a nickname to a frequently-used command or series of commands
+    related:
+      - ln
+
+  - name: ln
+    deck: create symbolic links, like shortcuts
+    related:
+      - alias
+
+  - name: cat
+    deck: Combine files and text streams
+
+  - name: cp
+    deck: Copy a file or directory
+    examples:
+      - name: Quickly create a backup of a file
+        shell: |
+          cp myfile{,.bak}
+        description: |
+          A new file named myfile.bak is created.
+        credit:
+          name: 'Catonmat: Top 10 One Liners From Commandlinefu Explained'
+          url: http://www.catonmat.net/blog/top-ten-one-liners-from-commandlinefu-explained/
+
+  - name: cd
+    deck: Change directory
+
+  - name: pwd
+    deck: What is the current directory
+
+  - name: tee
+    deck: redirect output
+
+  - name: chown
+    deck: change the permissions of a file
+
+  - name: sudo
+    deck: Become the boss
+
+  - name: less
+    deck: Read output one page at a time
+
+  - name: ls
+    deck: List the files in a directory
+
+  - name: man
+    deck: Display the documentation for a command
+
+  - name: which
+    deck: where is a file located
+
+  - name: bc
+    deck: Do math
+  - name: type
+    deck: What is the kind of file
+
+  - name: mkdir
+    deck: create a directory
+
+  - name: mv
+    deck: Move a file or directory
+
+  - name: rm
+    deck: Remove a file or directory
+
+  - name: rmdir
+    deck: Remove a directory
+
+  - name: touch
+    deck: Initialize or update the timestamp of a file
+
+  - name: grep
+    deck: Search for a text pattern
+    examples:
+      - name: find something
+    options:
+      - name: -c
+        alias: --count
+
+  - name: find
+    deck: Find a file by name
+
+
+  ################ file stuff
+
+  - name: cut
+    deck: remove parts of lines
+
+  - name: paste
+    deck: put lines together
+
+  - name: head
+    deck: Just the first lines of output
+    related:
+      - tail
+
+  - name: tail
+    deck: Just the last lines of output
+    related:
+      - head
+
+  - name: uniq
+    deck: Just the unique lines
+    related:
+      -sort
+
+  - name: strings
+    deck: in a binary file, print the readable stuff
+
+  - name: sort
+    deck: Sort lines
+    related:
+      - uniq
+
+  - name: echo
+    deck: Print to screen
+
+  - name: wc
+    deck: "Count the characters, words, or lines"
+
+
+  - name: sed
+    deck: A stream editor
+
+  - name: awk
+    deck: A text-processing language
+
+  - name: curl
+    deck: Fetch a file
+
+  - name: wget
+    deck: Spider a web site
+
+  - name: whoami
+    deck: The current user name
+
+  - name: time
+    deck: Get the current time
+
+  - name: sleep
+    deck: Pause for a bit
+
+  - name: zcat
+    deck: Read from a compressed file
+    related:
+      - cat
+
+  - name: diff
+    deck: Find the difference between two files
+
+  - name: history
+    deck: Get a list of your past commands
+    examples:
+      - name:
+        shell: |
+          history | awk '{print $2}'| awk 'BEGIN {FS="|"} {print $1}' | sort | uniq -c | sort -r
+        credit:
+          url: http://lifehacker.com/399468/top-10-command-line-tools
+          title: 'LifeHacker: Top 10 Command Line Tools'
+
+
+  ########## program/system stuff
+
+  - name: for
+    deck: Iterate through things
+
+  - name: xargs
+    deck: split up arguments
+
+
+  #### file management
+
+  - name: split
+    deck: Separate a file into smaller pieces
+
+  - name: zip
+    deck: Compress a file via zip
+
+  - name: tar
+    deck: Archive a bunch of files
+
+  - name: gzip
+    deck: Compress or uncompress a file via gz
+
+  - name: md5sum
+    deck: Hash a file

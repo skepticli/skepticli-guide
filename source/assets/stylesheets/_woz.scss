@@ -1,0 +1,102 @@
+body.woz{
+  color: $text-color;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.65em;
+  letter-spacing: 0.02rem;
+  code{
+    color: black;
+  }
+}
+
+aside{
+  font-size: small;
+  right: 0;
+  position: absolute;
+  width: 200px;
+}
+
+blockquote{
+  font-size: 1.0em;
+}
+
+
+
+/*grid */
+.container{
+  width: 980px;
+  margin: 0 auto;
+
+  .sec{
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p{
+    @extend .sec;
+    font-family: $font-family-serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.1em;
+  }
+
+
+  h1,h2{
+    @extend .sec;
+    font-family: $font-family-headers;
+    font-weight: 400;
+    margin-top: 2.4em;
+  }
+
+  h3,h4,h5,h6{
+    @extend .sec;
+    font-family: $font-family-headers;
+  }
+
+  h3,h4{
+    margin-top: 1.5em;
+  }
+
+  h4, h5{
+    font-weight: bold;
+  }
+
+
+  h1,h2{
+    text-align: center;
+  }
+
+  h1{
+    font-size: 2.6em;
+  }
+
+  h2{
+    font-size: 2.4em;
+  }
+
+  h3{
+    font-size: 1.7em;
+    margin-bottom: 1.0em;
+  }
+
+  h4{
+    font-size: 1.6em;
+  }
+
+  h5{
+    font-size: 1.5em;
+  }
+
+  h6{
+    font-size: 1.4em;
+  }
+
+  h3,h4,h5,h6,ul,ol{
+    @extend .sec;
+  }
+}
+
+
+.shell{
+  font-family: $font-family-monospace;
+}
